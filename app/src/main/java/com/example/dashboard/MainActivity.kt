@@ -23,9 +23,8 @@ class MainActivity : AppCompatActivity() {
 //            val launchIntent = packageManager.getLaunchIntentForPackage("com.example.todoapp")
 //            startActivity(launchIntent)
 
-            val intent = Intent(Intent.ACTION_MAIN)
-            intent.component =
-                ComponentName("com.example.todoapp", "com.example.todoapp.NotesActivity")
+
+            val intent = Intent(this, Class.forName("com.example.todoapp.NotesActivity"))
             startActivity(intent)
             }
         val btn_click_shopping = this.findViewById<Button>(R.id.Inventory)

@@ -8,7 +8,7 @@ import androidx.navigation.ui.setupActionBarWithNavController
 class NotesActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.notes_activity_main)
 
         setupActionBarWithNavController(findNavController(R.id.navHostFragment))
 
