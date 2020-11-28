@@ -1,2 +1,4 @@
+include ':shopping'
+include ':notes'
 include ':app'
 rootProject.name = "Dashboard"
