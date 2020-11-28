@@ -3,4 +3,22 @@
     <string name="title_activity_">Activity</string>
     <string name="tab_text_1">Tab 1</string>
     <string name="tab_text_2">Tab 2</string>
+    <string name="app_name_Login">TestApp</string>
+    <string name="sign_in_with_google">Sign in With Google</string>
+    <string name="example">Example</string>
+    <string name="id">ID</string>
+    <string name="name">Name</string>
+    <string name="email_address">Email address</string>
+    <string name="sign_out">Sign out</string>
+
+    <string-array name="array_name">
+        <item>Working Professional</item>
+        <item>Student</item>
+    </string-array>
+    <string name="title_activity_main_dashboard">MainDashboard</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="hello_world">Hello Square World!</string>
 </resources>

@@ -10,4 +10,7 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#44E6C6</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="gray">#F3F5F7</color>
+    <color name="purple">#9C27B0</color>
+
 </resources>
