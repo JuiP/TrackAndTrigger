@@ -1,4 +1,4 @@
-package com.example.dashboard
+package com.example.trackntrigger
 
 import android.content.ComponentName
 import android.content.Intent

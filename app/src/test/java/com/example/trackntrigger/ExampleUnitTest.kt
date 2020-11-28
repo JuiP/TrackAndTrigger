@@ -1,4 +1,4 @@
-package com.example.dashboard
+package com.example.trackntrigger
 
 import org.junit.Test
 
