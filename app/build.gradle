@@ -19,10 +19,25 @@ android {
 
     buildTypes {
         release {
-            minifyEnabled false
+            minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+
+    //Adding flavors for a customized dashboard
+//    flavorDimensions "profession"
+//    productFlavors {
+//        professional {
+//            dimension "profession"
+//            applicationId 'com.example.myapp.professional'
+//        }
+//
+//        student {
+//            dimension "profession"
+//            applicationId 'com.example.myapp.student'
+//        }
+//    }
+
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
@@ -34,6 +49,10 @@ android {
 
 dependencies {
 
+    implementation project(':shopping')
+    implementation project(':notes')
+    //implementation fileTree(dir: 'notes', include: ['*.jar'])
+    //implementation fileTree(dir: 'shopping', include: ['*.jar'])
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
     implementation 'androidx.core:core-ktx:1.3.2'
     implementation 'androidx.appcompat:appcompat:1.2.0'
