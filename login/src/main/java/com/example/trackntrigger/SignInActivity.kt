@@ -119,7 +119,7 @@ class SignInActivity : AppCompatActivity() {
                         .addOnFailureListener { e ->
                             Log.w("TAG", "Error adding document", e)
                         }
-                    val intent = Intent(this, DashboardActivity::class.java)
+                    val intent = Intent(this, Class.forName("com.example.dashboard"))
                     startActivity(intent)
                     finish()
                 } else {
@@ -137,7 +137,7 @@ class SignInActivity : AppCompatActivity() {
                     // Sign in success, update UI with the signed-in user's information
                     Log.d("SignInActivity", "signInWithEmail:success")
                     val user = mAuth.currentUser
-                    val intent = Intent(this, DashboardActivity::class.java)
+                    val intent = Intent(this, Class.forName("com.example.dashboard"))
                     startActivity(intent)
                     finish()
                 } else {

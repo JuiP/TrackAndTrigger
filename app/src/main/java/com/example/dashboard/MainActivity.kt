@@ -13,6 +13,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+//        val intent = Intent(this, Class.forName("com.example.login.LoginMainActivity"))
+//        startActivity(intent)
+
         // get reference to button
         val btn_click_todo = this.findViewById<Button>(R.id.TODO)
         btn_click_todo.setOnClickListener {
