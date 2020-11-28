@@ -36,10 +36,12 @@ class MainActivity : AppCompatActivity() {
 //            val launchIntent = packageManager.getLaunchIntentForPackage("com.example.todoapp")
 //            startActivity(launchIntent)
 
-            val intent = Intent(Intent.ACTION_MAIN)
-            intent.component =
-                ComponentName("com.digitalwebandmoney.shoppinglistreminder", "com.digitalwebandmoney.shoppinglistreminder.StoresActivity")
+            val intent = Intent(this, Class.forName("com.digitalwebandmoney.shoppinglistreminder.StoresActivity"))
             startActivity(intent)
+//            val intent = Intent(Intent.ACTION_MAIN)
+//            intent.component =
+//                ComponentName("com.digitalwebandmoney.shoppinglistreminder", "com.digitalwebandmoney.shoppinglistreminder.StoresActivity")
+//            startActivity(intent)
         }
         }
     }

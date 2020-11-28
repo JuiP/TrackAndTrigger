@@ -54,6 +54,7 @@ dependencies {
 
     implementation project(':shopping')
     implementation project(':notes')
+    implementation project(':login')
     //implementation fileTree(dir: 'notes', include: ['*.jar'])
     //implementation fileTree(dir: 'shopping', include: ['*.jar'])
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
