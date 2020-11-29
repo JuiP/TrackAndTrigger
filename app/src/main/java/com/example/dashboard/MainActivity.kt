@@ -51,5 +51,16 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, Class.forName("com.example.reminderapp.ReminderMainActivity"))
             startActivity(intent)
         }
+        val btn_click_share = this.findViewById<Button>(R.id.share)
+        btn_click_share.setOnClickListener {
+            val message: String = "Hello"
+
+            val intent = Intent()
+            intent.action = Intent.ACTION_SEND
+            intent.putExtra(Intent.EXTRA_TEXT, message)
+            intent.type = "text/plain"
+
+            startActivity(Intent.createChooser(intent, "Share to :"))
+        }
         }
     }
