@@ -63,10 +63,14 @@ class MainActivity : AppCompatActivity() {
         }
         val btn_click_meet = this.findViewById<Button>(R.id.Meet)
         btn_click_meet.setOnClickListener {
-            val launchIntent = packageManager.getLaunchIntentForPackage("com.example.reminderapp")
-            startActivity(launchIntent)
+            // getLaunchIntentForPackage is wrong here
+            // since the com.example.reminderapp package does not have an activity flagged as
+            // a launcher. Launch a specific activity instead
+            val intent = Intent(this, Class.forName("com.example.reminderapp.ReminderMainActivity"))
+            startActivity(intent);
+//            val launchIntent = packageManager.getLaunchIntentForPackage("com.example.reminderapp")
 //            val intent = Intent(this, Class.forName("com.example.reminderapp.ReminderMainActivity"))
-//            startActivity(intent)
+//            startActivity(launchIntent)
         }
         val btn_click_share = this.findViewById<Button>(R.id.share)
         btn_click_share.setOnClickListener {

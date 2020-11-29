@@ -54,6 +54,7 @@ dependencies {
 
     implementation project(':shopping')
     implementation project(':notes')
+    implementation project(':reminder')
     //implementation project(':login')
     //implementation project(':reminder')
     //implementation fileTree(dir: 'notes', include: ['*.jar'])
