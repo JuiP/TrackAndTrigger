@@ -46,5 +46,10 @@ class MainActivity : AppCompatActivity() {
 //                ComponentName("com.digitalwebandmoney.shoppinglistreminder", "com.digitalwebandmoney.shoppinglistreminder.StoresActivity")
 //            startActivity(intent)
         }
+        val btn_click_meet = this.findViewById<Button>(R.id.Meet)
+        btn_click_meet.setOnClickListener {
+            val intent = Intent(this, Class.forName("com.example.reminderapp.ReminderMainActivity"))
+            startActivity(intent)
+        }
         }
     }
