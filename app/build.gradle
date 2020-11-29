@@ -1,5 +1,5 @@
 plugins {
-    id 'com.android.application'
+    id 'com.android.library'
     id 'kotlin-android'
 }
 
@@ -8,7 +8,7 @@ android {
     buildToolsVersion "30.0.2"
 
     defaultConfig {
-        applicationId "com.example.dashboard"
+        // applicationId "com.example.dashboard"
         minSdkVersion 26
         targetSdkVersion 30
         versionCode 1
@@ -54,8 +54,8 @@ dependencies {
 
     implementation project(':shopping')
     implementation project(':notes')
-    implementation project(':login')
-    implementation project(':reminder')
+    //implementation project(':login')
+    //implementation project(':reminder')
     //implementation fileTree(dir: 'notes', include: ['*.jar'])
     //implementation fileTree(dir: 'shopping', include: ['*.jar'])
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
@@ -77,4 +77,9 @@ dependencies {
 
     // Testing Navigation
     androidTestImplementation "androidx.navigation:navigation-testing:$nav_version"
+
+    //firebase
+    implementation 'com.google.firebase:firebase-auth:20.0.1'
+    implementation 'com.google.firebase:firebase-firestore:22.0.0'
+    implementation 'com.google.firebase:firebase-auth-ktx:20.0.1'
 }

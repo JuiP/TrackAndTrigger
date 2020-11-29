@@ -21,8 +21,8 @@ class LoginMainActivity : AppCompatActivity() {
          * Else send him to DashboardActivity*/
         Handler().postDelayed({
             if(user != null){
-                val dashboardIntent = Intent(this, DashboardActivity::class.java)
-                startActivity(dashboardIntent)
+                val intent = Intent(this, Class.forName("com.example.dashboard.MainActivity"))
+                startActivity(intent)
                 finish()
             }else{
                 val signInIntent = Intent(this, SignInActivity::class.java)

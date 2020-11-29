@@ -1,5 +1,5 @@
 plugins {
-    id 'com.android.library'
+    id 'com.android.application'
     id 'kotlin-android'
     id 'com.google.gms.google-services'
 }
@@ -11,8 +11,8 @@ android {
     buildToolsVersion "30.0.0"
 
     defaultConfig {
-        //applicationId "com.example.trackntrigger"
-        minSdkVersion 23
+        applicationId "com.example.trackntrigger"
+        minSdkVersion 26
         targetSdkVersion 30
         versionCode 1
         versionName "1.0"
@@ -37,7 +37,10 @@ android {
 
 dependencies {
 
-    //implementation project(':app')
+    implementation project(':app')
+    //implementation project(':notes')
+    //implementation project(':reminder')
+    //implementation project(':shopping')
 
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
     implementation 'androidx.core:core-ktx:1.3.2'
